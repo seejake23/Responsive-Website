@@ -1,0 +1,151 @@
+/* Global View */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #ebebeb;
+}
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container {
+    background-color: #414040;
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    background-color: #414040;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight {
+    font-weight: bold;
+} 
+
+.mybutton {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(43, 226, 147);
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.col p {
+    font-size: 0.875rem;
+    padding: 15px 25px;
+    line-height: 1rem;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+
+
+/* Tablet View */
+@media (max-width : 768px) {
+    .col {
+        width: 45%;
+    }
+    .hide-desktop-only {
+        display: block;
+    }
+    
+
+    .header-container {
+        background-color: #414040;
+        min-height: 100px;
+        margin-bottom: 40px;
+        position: relative;
+        width: 100%;
+    }
+
+    .container {
+        padding-top: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+    .mybutton {
+        margin-left: 0;
+    }
+    .mob-wrapper {
+        display: block;
+        padding-right: 40px;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        padding-top:10px;
+    }
+
+    .navbutton {
+        display: block;
+        text-decoration: none;
+        color: white;
+        background-color: coral;
+        margin-left: -40px;
+        padding: 10px;
+    }
+
+    
+}
+
+/* Mobile View */
+@media (max-width : 650px) {
+    .col {
+        width: 100%;
+    }
+
+    .hide-mobile-only {
+        display: none;
+    }
+
+
+
+}
